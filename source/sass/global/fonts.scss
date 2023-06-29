@@ -24,3 +24,21 @@
   src: url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
     url("../../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
+
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../../fonts/RobotoCondensed-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "rouble";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/rouble.woff2") format("woff2"),
+    url("../../fonts/rouble.woff") format("woff");
+}
