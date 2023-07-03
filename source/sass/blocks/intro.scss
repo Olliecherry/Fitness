@@ -1,12 +1,30 @@
 .intro__wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
+
 
 .intro__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.intro__description {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  margin-top: 104px;
+}
+
+.intro__location {
+  display: flex;
+  order: 1;
+  justify-content: end;
 }
 
 .intro__item {
@@ -14,6 +32,16 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  margin-top: 8px;
+}
+
+.intro__subject {
+  display: flex;
+  margin-top: -150px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+  order: 3;
 }
 
 .intro__city {
@@ -24,6 +52,8 @@
   letter-spacing: 0.84px;
   padding: 0;
   margin: 0;
+  text-align: right;
+  margin-top: 80px;
 }
 
 .intro__name {
@@ -33,5 +63,29 @@
   line-height: 86px;
   letter-spacing: 3.6px;
   padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.intro__order {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  margin-top: 50px;
+  order: 4;
+}
+
+.intro__image {
+  display: none;
+}
+
+.intro__link {
+  padding: 25px 86px;
+  text-align: center;
+  border: 4px solid #000000;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
   margin: 0;
 }
