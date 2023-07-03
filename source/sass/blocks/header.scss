@@ -1,5 +1,26 @@
-.header {
+.header__part {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 15px;
+}
+
+.header__text {
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__phone {
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  margin: 0;
+  padding: 0;
 }
