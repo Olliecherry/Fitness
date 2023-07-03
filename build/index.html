@@ -54,9 +54,7 @@
                 <img class="intro__photo" src="img/images-photo/intro-photo-tab@1x.png" srcset="img/images-photo/intro-photo-tab@2x.png 2x" width="324" height="390" alt="Intro photo.">
               </picture>
             </div>
-            <!-- <p>На данной странице показан пример модальных окон.</p> -->
-            <!-- <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p> -->
+
           </div>
         </section>
         <secton class="gym">
@@ -505,6 +503,11 @@
               </div>
             </li>
           </ul>
+          <div class="features__advantage">
+            <p class="features__number features__number--advantage">100</p>
+            <p class="features__slogan">Тренажеров</p>
+            <p class="features__text features__text--advantage">Современные тренажеры на все группы мышц</p>
+          </div>
         </section>
         <section class="promotion">
           <div class="promotion__wrapper">
@@ -698,14 +701,195 @@
             </div>
           </div>
         </section>
+        <section class="review">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slider slider--first">
+                <div class="review__wrapper review__wrapper--first">
+                  <div class="review__image">
+                    <picture>
+                      <source type="image/webp" srcset="img/images-photo/review1@x.webp 1x, img/images-photo/review2@x.webp 2x">
+                      <img class="review__product" src="img/images-photo/review1@x.png" srcset="img/images-photo/review2@x.png 2x" width="80" height="80" alt="Anna photo.">
+                    </picture>
+                  </div>
+                  <div class="review__item">
+                    <div class="review__slogan">
+                      <h3 class="review__title">Анна Орлова</h3>
+                    </div>
+                    <p class="review__description">
+                      «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slider slider--second">
+                <div class="review__wrapper review__wrapper--second">
+                  <div class="review__image">
+                    <picture>
+                      <source type="image/webp" srcset="img/images-photo/review1@x.webp 1x, img/images-photo/review2@x.webp 2x">
+                      <img class="review__product" src="img/images-photo/review1@x.png" srcset="img/images-photo/review2@x.png 2x" width="80" height="80" alt="Anna photo.">
+                    </picture>
+                  </div>
+                  <div class="review__item">
+                    <div class="review__slogan">
+                      <h3 class="review__title">Ирина Седова</h3>
+                    </div>
+                    <p class="review__description">
+                      «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slider slider--third">
+                <div class="review__wrapper review__wrapper--third">
+                  <div class="review__image">
+                    <picture>
+                      <source type="image/webp" srcset="img/images-photo/review1@x.webp 1x, img/images-photo/review2@x.webp 2x">
+                      <img class="review__product" src="img/images-photo/review1@x.png" srcset="img/images-photo/review2@x.png 2x" width="80" height="80" alt="Anna photo.">
+                    </picture>
+                  </div>
+                  <div class="review__item">
+                    <div class="review__slogan">
+                      <h3 class="review__title">Инга Круус</h3>
+                    </div>
+                    <p class="review__description">
+                      «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="advertisement__container container">
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+        <section class="connect">
+          <h2 class="visually-hidden">Контакты.</h2>
+          <div class="connect__form">
+            <form class="form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="form__wrapper">
+                <fieldset class="form__group">
+                  <legend class="form__title">Бесплатное занятие </legend>
+                  <ul class="form__group-list">
+                    <li class="form__input">
+                      <label class="form__label" for="name">Имя</label>
+                      <input class="form__field form__field--name" type="text" name="name" id="name" placeholder="Имя" required>
+                    </li>
+                    <li class="form__input">
+                      <label class="form__label" for="phone">Телефон</label>
+                      <input class="form__field form__field--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="form__send">
+                <button class="form__button button button--transparent" type="submit">Отправить заказ</button>
+              </div>
+            </form>
+          </div>
+          <div class="connect__contacts contacts">
+            <div class="contacts__slogan">
+              <h3 class="contacts__name">Контакты</h3>
+            </div>
+            <div class="contacts__location">
+              <div class="contacts__address">
+                <p class="contacts__item">Адрес:</p>
+                <p class="contacts__description">г. Омск, ул. 60 лет Октября, 7</p>
+              </div>
+              <div class="contacts__schedule">
+                <p class="contacts__item">График работы:</p>
+                <p class="contacts__description">Пн-Вс: с 8:00 до 22:00</p>
+              </div>
+            </div>
+            <div class="contacts__details">
+              <div class="contacts__phone">
+                <p class="contacts__item">Телефон:</p>
+                <p class="contacts__description">8-800-555-55-55</p>
+              </div>
+              <div class="contacts__emeil">
+                <p class="contacts__item">Email:</p>
+                <p class="contacts__description">omsk@supergym.ru</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
-        <div class="container"></div>
+        <div class="footer">
+          <div class="footer__part container">
+            <div class="footer__logo">
+              <a class="footer__link" href="#">SUPERGYM</a>
+            </div>
+            <div class="footer__media media">
+              <h2 class="visually__hidden">Опции зала подробно.</h2>
+              <ul class="media__list">
+                <li class="media__item">
+                  <a class="media__link" href="#">Услуги</a>
+                </li>
+                <li class="media__item">
+                  <a class="media__link" href="#">Абонементы</a>
+                </li>
+                <li class="media__item">
+                  <a class="media__link" href="#">Акции</a>
+                </li>
+                <li class="media__item">
+                  <a class="media__link" href="#">Тренеры</a>
+                </li>
+                <li class="media__item">
+                  <a class="media__link" href="#">Расписание</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                    <span class="visually-hidden">Ссылка вконтакте.</span>
+                    <svg class="social__icon" width="25" height="25">
+                      <use xlink:href="img/sprite.svg#icon-social-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademy">
+                    <span class="visually-hidden">Ссылка OK.</span>
+                    <svg class="social__icon" width="25" height="25">
+                      <use xlink:href="img/sprite.svg#icon-social-ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                    <span class="visually-hidden">Ссылка Reddit.</span>
+                    <svg class="social__icon" width="25" height="25">
+                      <use xlink:href="img/sprite.svg#icon-social-reddit"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__copyright copyright">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span class="copyright__text">Разработано</span>
+                <span class="visually-hidden">Сайт академии.</span>
+                <svg class="copyright__academy" width="27" height="34">
+                  <use xlink:href="img/sprite.svg#icon-footer-academy"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
 
+                <!-- <p>На данной странице показан пример модальных окон.</p> -->
+            <!-- <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p> -->
     <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
+    <!-- <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -731,7 +915,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
