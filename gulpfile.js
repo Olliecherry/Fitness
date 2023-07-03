@@ -44,3 +44,16 @@ const dev = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, com
 const start = gulp.series(clean, copy, sprite, gulp.parallel(compileStyles, compileMainScripts, compileVendorScripts), syncServer);
 
 export { createWebp as webp, build, start, dev};
+
+export function processStyles () {
+  return gulp.src('source/sass/*.scss', { sourcemaps: isDevelopment })
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([
+      postUrl({ assetsPath: '../' }),
+      autoprefixer(),
+      csso()
+    ]))
+    .pipe(gulp.dest('build/css', { sourcemaps: isDevelopment }))
+    .pipe(browser.stream());
+}
