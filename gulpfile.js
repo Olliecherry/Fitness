@@ -45,15 +45,15 @@ const start = gulp.series(clean, copy, sprite, gulp.parallel(compileStyles, comp
 
 export { createWebp as webp, build, start, dev};
 
-export function processStyles () {
-  return gulp.src('source/sass/*.scss', { sourcemaps: isDevelopment })
-    .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([
-      postUrl({ assetsPath: '../' }),
-      autoprefixer(),
-      csso()
-    ]))
-    .pipe(gulp.dest('build/css', { sourcemaps: isDevelopment }))
-    .pipe(browser.stream());
-}
+// export function processStyles () {
+//   return gulp.src('source/sass/*.scss', { sourcemaps: isDevelopment })
+//     .pipe(plumber())
+//     .pipe(sass().on('error', sass.logError))
+//     .pipe(postcss([
+//       postUrl({ assetsPath: '../' }),
+//       autoprefixer(),
+//       csso()
+//     ]))
+//     .pipe(gulp.dest('build/css', { sourcemaps: isDevelopment }))
+//     .pipe(browser.stream());
+// }
