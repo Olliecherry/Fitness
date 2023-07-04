@@ -331,7 +331,7 @@ template {
 @font-face {
   font-family: "AlumniSans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-display: swap;
   src: url("../../fonts/AlumniSans-Bold.woff2") format("woff2"), url("../../fonts/AlumniSans-Bold.woff") format("woff");
 }
@@ -588,18 +588,18 @@ img {
     padding-right: 15px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: $vp-768) {
   .container {
     width: 768px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: $vp-1200) {
   .container {
     width: 1200px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 103px;
+    padding-right: 103px;
   }
 }
 
@@ -1300,6 +1300,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 15px;
+  color: #ffffff;
 }
 
 .header__text {
@@ -1310,6 +1311,7 @@ img {
   letter-spacing: 0.4px;
   margin: 0;
   padding: 0;
+  color: #ffffff;
 }
 
 .header__phone {
@@ -1320,9 +1322,26 @@ img {
   letter-spacing: 0.4px;
   margin: 0;
   padding: 0;
+  margin-top: 5px;
 }
 
-.intro__wrapper {
+@media (min-width: $vp-768) {
+  .header__part {
+    padding-top: 40px;
+  }
+}
+@media (min-width: $vp-1200) {
+  .header__part {
+    padding-top: 30px;
+  }
+}
+.intro {
+  margin-top: -50px;
+  color: #ffffff;
+  background: conic-gradient(from 167deg at 35.31% 34.22%, #003D85 32.2363382578deg, #B80027 313.3060026169deg);
+}
+
+.intro__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1423,6 +1442,7 @@ img {
   padding: 0;
   margin: 0;
   text-align: right;
+  text-transform: capitalize;
 }
 
 .intro__order {
@@ -1446,14 +1466,111 @@ img {
 .intro__link {
   padding: 25px 86px;
   text-align: center;
-  border: 4px solid #000000;
+  border: 4px solid #ffffff;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
+  text-transform: uppercase;
   margin: 0;
+  color: #ffffff;
 }
 
+@media (min-width: $vp-768) {
+  .intro {
+    margin-top: -50px;
+    color: #ffffff;
+    background: conic-gradient(from 155deg at 20.7% 35.74%, #003D85 32.2363382578deg, #B80027 313.3060026169deg);
+  }
+  .intro__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 324px 324px;
+    grid-template-columns: 324px 324px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    padding-top: 82px;
+  }
+  .intro__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+  .intro__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 110px;
+  }
+  .intro__location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .intro__city {
+    margin-top: 50px;
+  }
+  .intro__subject {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -150px;
+  }
+  .intro__link {
+    padding: 23px 33px;
+  }
+  .intro__order {
+    margin-bottom: 107px;
+    margin-top: 60px;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  .intro__photo {
+    width: 324px;
+    height: 390px;
+    display: block;
+  }
+}
+@media (min-width: $vp-1200) {
+  .intro {
+    margin-top: -60px;
+  }
+  .intro__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 376px 500px;
+    grid-template-columns: 376px 500px;
+    -webkit-column-gap: 64px;
+       -moz-column-gap: 64px;
+            column-gap: 64px;
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+  .intro__photo {
+    width: 500px;
+    height: 556px;
+  }
+  .intro__name {
+    margin-left: 134px;
+  }
+}
 .page {
   height: 100%;
   font-family: "RobotoCondensed", "Arial", sans-serif;
