@@ -1,0 +1,45 @@
+.gym__wrapper {
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.gym__advert {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.gym__name {
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.96px;
+  color: #102654;
+  margin: 0;
+}
+
+.gym__feature {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #102654;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.gym__description {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #102654;
+  margin: 0;
+}
+
+.gym__description--add {
+  display: none;
+}

@@ -24,6 +24,19 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+const btnOk = document.querySelector('.btn--play');
+const btnStop = document.querySelector('.btn--stop');
+const wrapperVideo = document.getElementById('playvideo');
+
+btnOk.addEventListener('click', function () {
+  wrapperVideo.play();
+});
+
+btnStop.addEventListener('click', function () {
+  wrapperVideo.pause();
+});
+
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
