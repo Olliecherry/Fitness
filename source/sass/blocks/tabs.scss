@@ -4,9 +4,9 @@
 
 .tabs__controls {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   margin-bottom: 40px;
+  justify-content: space-between;
 
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
@@ -14,29 +14,29 @@
 }
 
 .tabs__control {
-  text-transform: uppercase;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   cursor: pointer;
   margin: 0 20px;
-  opacity: 0.5;
-  min-width: auto;
-  justify-content: center;
-  width: 25%;
-
-  @media screen and (max-width: 1023px) {
-    margin: 0 10px;
-    padding: 15px;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin: 10px 2% 0;
-    padding: 10px;
-    width: 45%;
-  }
+  justify-content: space-between;
+  background-color: #F8F9FC;
+  margin: 0;
+  padding: 20px 0;
+  border: none;
 
   &.is-active {
-    opacity: 1;
+    border-bottom: 1px solid #d10a42;
     pointer-events: none;
   }
+}
+
+.tabs__rubl {
+  font-family: "rouble", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .tabs__content {
@@ -48,21 +48,13 @@
 .tabs__element {
   padding: 25px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #F8F9FC;
 
   @media screen and (max-width: 767px) {
     padding: 15px;
-  }
-
-  p {
-    margin: 0;
-
-    &:not(:last-child) {
-      margin: 0 0 20px 0;
-    }
-  }
-
-  &:nth-child(1) {
-    background-color: rgb(250, 235, 215);
   }
 
   &:nth-child(2) {
@@ -78,6 +70,27 @@
   }
 }
 
+.tabs__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 35px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.tabs__cost {
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+.tabs__price {
+  margin: 0;
+  margin-right: 10px;
+}
+
 .tabs--unset .tabs__content {
   height: 100px;
 }
@@ -86,4 +99,11 @@
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.tabs__slogan {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
 }

@@ -43,3 +43,20 @@
 .gym__description--add {
   display: none;
 }
+
+.gym__photo {
+  margin-bottom: 40px;
+}
+
+.gym__video {
+  display: flex;
+  position: relative;
+}
+
+.gym__picture {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
+  background-color: #14367A;
+}

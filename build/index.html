@@ -82,20 +82,32 @@
                 </picture>
               </div>
               <div class="gym__video">
-                <video id="playvideo">
+                <div class="gym__picture">
+                  <picture>
+                    <source type="image/webp" media="(min-width: $vp-1200)" srcset="img/images-photo/video-desk@1x.webp 1x, img/images-photo/video-desk@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: $vp-768)" srcset="img/images-photo/video-tab@1x.webp 1x, img/images-photo/video-tab@2x.webp 2x">
+                    <source type="image/webp" srcset="img/images-photo/video-mob@1x.webp 1x, img/images-photo/video-mob@2x.webp 2x">
+                    <source media="(min-width: $vp-1200)" srcset="img/images-photo/video-desk@1x.png 1x, img/images-photo/video-desk@2x.png 2x">
+                    <source media="(min-width: $vp-768)" srcset="img/images-photo/video-tab@1x.png 1x, img/images-photo/video-tab@2x.png 2x">
+                    <img class="gym__scene" src="img/images-photo/video-mob@1x.png" srcset="img/images-photo/video-mob@2x.png 2x" width="320" height="167" alt="Фото зала.">
+                  </picture>
+                </div>
+                <video width="320" height="167" id="playvideo">
                   <source src="https://www.youtube.com/watch?v=9TZXsZItgdw" type="video/mp4">
                 </video>
-                <div class="btn btn--play">Click Play</div>
-                <div class="btn btn--stop">Click Stop</div>
+                <div class="gym__button btn--play"></div>
+                <div class="gym__button btn--stop"></div>
               </div>
             </div>
           </div>
         </secton>
         <section class="abonement component-demo" data-tabs="element">
-          <h2 class="abonement__name">Абонементы.</h2>
+          <div class="abonement__slogan">
+            <h2 class="abonement__name">Абонементы</h2>
+          </div>
           <div class="abonement__wrapper">
             <div class="tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
-              <div class="tabs__controls" data-tabs="controls">
+              <div class="tabs__controls container" data-tabs="controls">
                 <button class="tabs__control btn is-active" type="button" data-tabs="control">1 месяц</button>
                 <button class="tabs__control btn" type="button" data-tabs="control">6 месяцев</button>
                 <button class="tabs__control btn" type="button" data-tabs="control">12 месяцев</button>
