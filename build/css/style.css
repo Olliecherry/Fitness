@@ -1472,6 +1472,169 @@ img {
   margin: 0;
 }
 
+.supergames__wrapper {
+  padding: 70px 15px 70px 15px;
+}
+
+.supergames__promotion {
+  background-color: #ED0233;
+  color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 117px 56px;
+  grid-template-columns: 117px 56px;
+  -webkit-column-gap: 29px;
+     -moz-column-gap: 29px;
+          column-gap: 29px;
+  -ms-grid-rows: 93px 24px 39px;
+  grid-template-rows: 93px 24px 39px;
+  row-gap: 15px;
+  padding: 50px 44px;
+}
+
+.supergames__slogan {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 0;
+  grid-row-end: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.supergames__period {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 0;
+  grid-row-end: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.supergames__text {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-row-span: 1;
+  grid-row-end: 3;
+}
+
+.supergames__order {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-row-span: 1;
+  grid-row-end: 4;
+}
+
+.supergames__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 16px 19px;
+  grid-template-rows: 16px 19px;
+}
+
+.supergames__description--date {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 13px 26px;
+  grid-template-columns: 13px 26px;
+  -webkit-column-gap: 3px;
+     -moz-column-gap: 3px;
+          column-gap: 3px;
+}
+
+.supergames__name {
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+  margin: 0;
+  text-align: center;
+}
+
+.supergames__attribute {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.supergames__description {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.supergames__date {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.supergames__text {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.supergames__order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 21px;
+}
+
+.supergames__link {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 16px 50px;
+  border: 2px solid #ffffff;
+}
+
 .tabs {
   max-width: 100%;
 }
@@ -1481,7 +1644,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1516,8 +1679,12 @@ img {
 .tabs__rubl {
   font-family: "rouble", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 48px;
+  line-height: 56px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  z-index: 3;
 }
 
 .tabs__content {
@@ -1527,7 +1694,7 @@ img {
 }
 
 .tabs__element {
-  padding: 25px;
+  padding: 35px 15px 0 15px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1542,7 +1709,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .tabs__element {
-    padding: 15px;
+    padding: 35px 15px 0 15px;
   }
 }
 .tabs__element:nth-child(2) {
@@ -1566,9 +1733,13 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 35px;
+  margin-bottom: 35px;
   background-color: #ffffff;
   text-align: center;
+}
+.tabs__item.is-active {
+  border: 7px solid #d10a42;
+  pointer-events: none;
 }
 
 .tabs__cost {
@@ -1581,11 +1752,60 @@ img {
       -ms-grid-row-align: center;
       align-self: center;
   margin-bottom: 50px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
 .tabs__price {
   margin: 0;
   margin-right: 10px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #103AAE;
+  z-index: 3;
+}
+
+.tabs__shadow {
+  position: absolute;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  color: #E8E8E8;
+  opacity: 0.48;
+  top: -45px;
+  z-index: 1;
+}
+
+.tabs__order {
+  margin: 0;
+  margin-bottom: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabs__link {
+  text-decoration: none;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 27px 44px 28px 44px;
+  border: 2px solid #102654;
+  color: #102654;
 }
 
 .tabs--unset .tabs__content {
@@ -1603,6 +1823,18 @@ img {
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
+  margin-top: 55px;
+  margin-bottom: 20px;
+}
+
+.tabs__description {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  margin-bottom: 81px;
+  color: #495A7D;
 }
 
 [data-accordion=element].is-active > [data-accordion=content] {

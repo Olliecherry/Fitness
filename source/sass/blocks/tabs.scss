@@ -5,7 +5,7 @@
 .tabs__controls {
   display: flex;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 0;
   justify-content: space-between;
 
   @media screen and (max-width: 767px) {
@@ -35,8 +35,10 @@
 .tabs__rubl {
   font-family: "rouble", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 48px;
+  line-height: 56px;
+  align-self: center;
+  z-index: 3;
 }
 
 .tabs__content {
@@ -46,7 +48,7 @@
 }
 
 .tabs__element {
-  padding: 25px;
+  padding: 35px 15px 0 15px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -54,7 +56,7 @@
   background-color: #F8F9FC;
 
   @media screen and (max-width: 767px) {
-    padding: 15px;
+    padding: 35px 15px 0 15px;
   }
 
   &:nth-child(2) {
@@ -74,9 +76,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 35px;
+  margin-bottom: 35px;
   background-color: #ffffff;
   text-align: center;
+
+  &.is-active {
+    border: 7px solid #d10a42;
+    pointer-events: none;
+  }
 }
 
 .tabs__cost {
@@ -84,11 +91,52 @@
   flex-wrap: nowrap;
   align-self: center;
   margin-bottom: 50px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
 }
 
 .tabs__price {
   margin: 0;
   margin-right: 10px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #103AAE;
+  z-index: 3;
+}
+
+.tabs__shadow {
+  position: absolute;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  color: #E8E8E8;
+  opacity: 0.48;
+  top: -45px;
+  z-index: 1;
+}
+
+.tabs__order {
+  margin: 0;
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs__link {
+  text-decoration: none;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 27px 44px 28px 44px;
+  border: 2px solid #102654;
+  color: #102654;
 }
 
 .tabs--unset .tabs__content {
@@ -106,4 +154,16 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
+  margin-top: 55px;
+  margin-bottom: 20px;
+}
+
+.tabs__description {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  margin-bottom: 81px;
+  color: #495A7D;
 }
