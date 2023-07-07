@@ -1,0 +1,83 @@
+.promotion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promotion__wrapper {
+  padding: 70px 15px;
+}
+
+.promotion__slogan {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.promotion__name {
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.96px;
+  margin: 0;
+}
+
+.promotion__information {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ED0233;
+  color: #ffffff;
+}
+
+.promotion__year {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+.promotion__number {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 82px;
+  margin: 0;
+}
+
+.promotion__description {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.promotion__more {
+  margin-bottom: 45px;
+}
+
+.promotion__link {
+  color: #ffffff;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.promotion__image {
+  display: flex;
+}
+
+.promotion__product {
+  width: 290px;
+  height: 299px;
+  display: block;
+}

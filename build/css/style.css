@@ -1136,11 +1136,15 @@ img {
 .features__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 242px 242px 239px 242px 242px;
-  grid-template-rows: 242px 242px 239px 242px 242px;
+  -ms-grid-rows: (-webkit-min-content)[5];
+  -ms-grid-rows: (min-content)[5];
+  grid-template-rows: repeat(5, -webkit-min-content);
+  grid-template-rows: repeat(5, min-content);
+  row-gap: 50px;
   list-style-type: none;
   margin-top: 10px;
   padding: 0;
+  margin-bottom: 70px;
 }
 
 .features__item {
@@ -1159,8 +1163,6 @@ img {
           align-items: center;
   padding-left: 47px;
   padding-right: 47px;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .features__detail {
@@ -1211,7 +1213,6 @@ img {
           justify-content: center;
   text-align: center;
   padding: 0;
-  padding-bottom: 50px;
 }
 
 .features__name {
@@ -1249,6 +1250,7 @@ img {
   line-height: 87px;
   margin: 0;
   padding: 0;
+  margin-top: 40px;
 }
 
 .features__slogan {
@@ -1270,6 +1272,7 @@ img {
   line-height: 19px;
   margin: 0;
   color: #ffffff;
+  margin-bottom: 50px;
 }
 
 .gym__wrapper {
@@ -1644,6 +1647,108 @@ img {
   min-height: 100%;
   color: #102654;
   margin: 0;
+}
+
+.promotion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promotion__wrapper {
+  padding: 70px 15px;
+}
+
+.promotion__slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.promotion__name {
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.96px;
+  margin: 0;
+}
+
+.promotion__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #ED0233;
+  color: #ffffff;
+}
+
+.promotion__year {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+.promotion__number {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 82px;
+  margin: 0;
+}
+
+.promotion__description {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.promotion__more {
+  margin-bottom: 45px;
+}
+
+.promotion__link {
+  color: #ffffff;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.promotion__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promotion__product {
+  width: 290px;
+  height: 299px;
+  display: block;
 }
 
 .supergames__wrapper {
