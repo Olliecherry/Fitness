@@ -1,0 +1,92 @@
+.team__wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 274px;
+  padding-bottom: 70px;
+}
+
+.team__motto {
+  text-align: center;
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: #102654;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.team__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.team__details {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.team__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.team__dept {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  color: #B6BDCC;
+}
+
+.team__list {
+  color: #ffffff;
+  margin: 0;
+  margin-top: 21px;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+.team__item {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  z-index: 2;
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+}
+
+.team__product {
+  display: block;
+  width: 226px;
+  height: 274px;
+}
+
+.team__card {
+  display: none;
+
+  &:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 226px;
+    background-color: #102654;
+    opacity: 0.89;
+    z-index: 1;
+    padding-top: 48px;
+  }
+}

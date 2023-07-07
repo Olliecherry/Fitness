@@ -1,0 +1,130 @@
+.swiper-wrapper {
+  position: relative;
+}
+
+.swiper-button-prev {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  top: 150px;
+  left: 15px;
+  width: 10px;
+  height: 19px;
+}
+
+.swiper-button-next {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  top: 150px;
+  right: 15px;
+  width: 10px;
+  height: 19px;
+}
+
+.swiper-button-prev::after {
+  content: url("../../img/svg/swipe-back.svg");
+  z-index: 4;
+  font-size: inherit;
+  display: block;
+}
+
+.swiper-button-next::after {
+  content: url("../../img/svg/swipe-forward.svg");
+  z-index: 4;
+  font-size: inherit;
+  display: block;
+}
+
+@media (max-width: $vp-320) {
+  .swiper-pagination-bullets {
+    display: none;
+  }
+}
+
+@media (min-width: $vp-768) {
+  .swiper-button-prev {
+    top: -522px;
+    left: 30px;
+  }
+
+  .swiper-button-next {
+    top: -522px;
+    right: 33px;
+  }
+
+  .swiper-pagination-bullets {
+    display: none;
+  }
+}
+
+@media (min-width: $vp-1200) {
+  .swiper-button-prev {
+    top: -695px;
+    left: 30px;
+    height: 714px;
+    width: 20px;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:focus {
+      background-color: #ffffff;
+    }
+
+    &:active {
+      background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    }
+
+    &:disabled {
+      background-color: transparent;
+    }
+  }
+
+  .swiper-button-next {
+    top: -695px;
+    right: 30px;
+    height: 714px;
+    width: 20px;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:focus {
+      background-color: #ffffff;
+    }
+
+    &:active {
+      background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    }
+
+    &:disabled {
+      background-color: transparent;
+    }
+  }
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: flex;
+    justify-content: center;
+    top: -70px;
+  }
+
+  .swiper-pagination-bullet {
+    display: inline-block;
+    height: 4px;
+    width: 62px;
+    background-color: #ffffff;
+    opacity: 1;
+    border-radius: 0%;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #7859cf;
+  }
+}

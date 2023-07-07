@@ -1,0 +1,140 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F8F9FC;
+}
+
+.features__motto {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  padding: 0;
+}
+
+.features__title {
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.96px;
+  margin: 0;
+  padding: 0;
+}
+
+.features__list {
+  display: grid;
+  grid-template-rows: 242px 242px 239px 242px 242px;
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.features__detail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+}
+
+.features__number {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 68px;
+  margin: 0;
+  background: linear-gradient(65deg, #D10A42 25%, #00359F 75%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: table;
+  // margin-top: 50px;
+  padding: 0;
+}
+
+.features__attribute {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+  color: #2E35AC;
+}
+
+.features__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+.features__name {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.features__text {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  padding: 0;
+  color: #102654;
+}
+
+.features__item--advantage {
+  background-color: #1C3374;
+  color: #ffffff;
+  text-align: center;
+}
+
+.features__amount {
+  color: #ffffff;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 87px;
+  margin: 0;
+  padding: 0;
+}
+
+.features__slogan {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 25px;
+}
+
+.features__text--advantage {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  color: #ffffff;
+}

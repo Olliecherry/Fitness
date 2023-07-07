@@ -81,8 +81,16 @@
   text-align: center;
 
   &.is-active {
-    border: 7px solid #d10a42;
+    border: 7px solid;
+    border-image: linear-gradient(20deg, #003D85 22%, #B80027 78%);
+    border-image-slice: 1;
     pointer-events: none;
+
+    .tabs__link {
+      background: linear-gradient(20deg, #003D85 22%, #B80027 78%);
+      color: #ffffff;
+      border: none;
+    }
   }
 }
 
