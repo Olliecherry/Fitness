@@ -44,7 +44,7 @@
 .tabs__content {
   margin-bottom: 40px;
 
-  transition: height 0.3s;
+  // transition: height 0.3s;
 }
 
 .tabs__element {
@@ -56,7 +56,7 @@
   background-color: #F8F9FC;
 
   @media screen and (max-width: 767px) {
-    padding: 35px 15px 0 15px;
+    padding: 20px 0 20px 0;
   }
 
   &:nth-child(2) {

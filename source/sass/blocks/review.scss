@@ -1,0 +1,59 @@
+.review__title {
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.96px;
+  margin: 0;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.review__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 47px;
+  margin-right: 47px;
+  background-color: #1C3374;
+  margin-bottom: 70px;
+}
+
+.review__image {
+  display: block;
+  padding-top: 40px;
+  padding-left: 41px;
+}
+
+.review__item {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.review__slogan {
+  margin-top: -55px;
+  margin-left: 124px;
+}
+
+.review__name {
+  margin: 0;
+  text-align: left;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.review__description {
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 34px;
+}

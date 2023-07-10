@@ -34,3 +34,14 @@
   width: 73px;
   height: 73px;
 }
+
+.btn--open {
+  .accordion__button {
+    width: 32px;
+    height: 32px;
+    content: url("../../img/svg/btn--open.svg");
+    z-index: 4;
+    font-size: inherit;
+    display: block;
+  }
+}

@@ -1,6 +1,6 @@
 .accordion {
   //max-width: 500px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
 
   & & {
     width: 90%;
@@ -12,8 +12,21 @@
   }
 
   &__element {
-    margin-bottom: 34px;
-    padding: 10px;
+    position: relative;
+  }
+
+  &__content {
+    height: 200px;
+  }
+
+  &__name {
+    margin: 0;
+    padding-right: 42px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 12px;
   }
 
   &__element.is-active > &__button {
@@ -23,6 +36,15 @@
   &__button {
     width: 100%;
     padding: 10px;
+    width: 32px;
+    height: 32px;
+    content: url("../../img/svg/btn--open.svg");
+    z-index: 4;
+    font-size: inherit;
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 0;
 
     text-transform: uppercase;
 
@@ -30,6 +52,7 @@
   }
 
   &__wrapper {
-    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

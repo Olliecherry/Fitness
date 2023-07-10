@@ -1,0 +1,58 @@
+.faq {
+  background-color: #F8F9FC;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__name {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.96px;
+  text-align: center;
+  padding: 0;
+}
+
+.faq__wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .tabs__controls--faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 8px;
+    column-gap: 8px;
+  }
+
+  .tabs__control {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-weight: 500;
+    border: 1px solid rgba(16, 38, 84, 0.20);
+
+    &.is-active {
+      background: linear-gradient(20deg, #003D85 22%, #B80027 78%);
+      color: #ffffff;
+      border: none;
+    }
+  }
+
+  .accordion__element {
+    display: flex;
+  }
+
+  .accordion__button .btn--open {
+    width: 32px;
+    height: 32px;
+    content: url("../../img/svg/btn--open.svg");
+    z-index: 4;
+    font-size: inherit;
+    display: block;
+  }
+}
+
+
