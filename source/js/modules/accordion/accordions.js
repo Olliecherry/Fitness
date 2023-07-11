@@ -15,7 +15,7 @@ export class Accordions {
 
   _documentClickHandler(evt) {
     const target = evt.target;
-    if (!target.closest('[data-accordion="btn--open"]')) {
+    if (!target.closest('[data-accordion="button"]')) {
       return;
     }
 
@@ -54,7 +54,7 @@ export class Accordions {
 
   updateAccordionsHeight(element = null) {
     if (element) {
-      const content = element.querySelector('[data-accordion="accordion__text"]');
+      const content = element.querySelector('[data-accordion="content"]');
       content.style.transition = 'none';
       content.style.maxHeight = `${content.scrollHeight}px`;
       setTimeout(() => {
@@ -67,7 +67,7 @@ export class Accordions {
 
     closeElements.forEach((closeElement) => {
       const parent = closeElement.closest('[data-accordion="parent"]');
-      const content = closeElement.querySelector('[data-accordion="accordion__text"]');
+      const content = closeElement.querySelector('[data-accordion="content"]');
       if (parent.dataset.destroy && !window.matchMedia(parent.dataset.destroy).matches) {
         content.style.maxHeight = '100%';
         return;
@@ -77,7 +77,7 @@ export class Accordions {
 
     const openElements = document.querySelectorAll('[data-accordion="element"].is-active');
     openElements.forEach((openElement) => {
-      const content = openElement.querySelector('[data-accordion="accordion__text"]');
+      const content = openElement.querySelector('[data-accordion="content"]');
       const parent = openElement.closest('[data-accordion="parent"]');
       if (parent.dataset.destroy && !window.matchMedia(parent.dataset.destroy).matches) {
         content.style.maxHeight = '100%';
@@ -110,7 +110,7 @@ export class Accordions {
 
   openAccordion(element, transition = true) {
     const parentElement = element.closest('[data-accordion="parent"]');
-    const contentElement = element.querySelector('[data-accordion="accordion__text"]');
+    const contentElement = element.querySelector('[data-accordion="content"]');
     this._openHeight += contentElement.scrollHeight;
 
     if (parentElement.hasAttribute('data-single')) {
@@ -137,7 +137,7 @@ export class Accordions {
   }
 
   closeAccordion(element, transition = true) {
-    const contentElement = element.querySelector('[data-accordion="accordion__text"]');
+    const contentElement = element.querySelector('[data-accordion="content"]');
     if (!contentElement) {
       return;
     }
