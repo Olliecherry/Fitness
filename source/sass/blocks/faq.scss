@@ -39,10 +39,22 @@
       color: #ffffff;
       border: none;
     }
-  }
 
-  .accordion__element {
-    display: flex;
+    .tabs__element {
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+    }
+
+    // .accordion {
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+
+    // .accordion__element {
+    //   display: flex;
+    //   min-height: 100px;
+    // }
   }
 
   .accordion__button .btn--open {

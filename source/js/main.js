@@ -1,28 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initTabs} from './init-tabs';
-import {initAccordions} from './init-accordion';
+import {initTabs} from './modules/tabs/init-tabs';
+import {initAccordions} from './modules/accordion/init-accordion';
 
 // ---------------------------------
-
-window.addEventListener('DOMContentLoaded', () => {
-  window.addEventListener('load', () => {
-    initAccordions();
-  });
-});
-
-
-let tabs;
-
-const initTabs = () => {
-  tabs = new Tabs();
-  // Используйте в разработке экспортируемую переменную tabs, window сделан для бэкэнда
-  window.tabs = tabs;
-};
-
-export {initTabs, tabs};
-
 
 window.addEventListener('DOMContentLoaded', () => {
 
