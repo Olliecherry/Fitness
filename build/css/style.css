@@ -1497,9 +1497,19 @@ img {
   margin-bottom: 50px;
 }
 
+.footer {
+  position: relative;
+}
+
 .footer__part {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 120px -webkit-min-content;
+  -ms-grid-rows: 120px min-content;
+  grid-template-rows: 120px -webkit-min-content;
+  grid-template-rows: 120px min-content;
   background-color: #030A1A;
   padding: 50px 15px;
   color: #ffffff;
@@ -1514,6 +1524,35 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.footer__logo {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+}
+
+.footer__media {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 2;
+  grid-row-end: 3;
+  max-height: 120px;
+}
+
+.footer__social {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-row-span: 1;
+  grid-row-end: 4;
 }
 
 .form__group {
@@ -1977,6 +2016,18 @@ img {
 
 .media__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: 120px;
 }
 
 .media__link {
@@ -1987,6 +2038,13 @@ img {
   font-size: 16px;
   line-height: 19px;
   margin: 0;
+}
+
+.media__item {
+  margin-top: 30px;
+  max-height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .page {
@@ -2248,6 +2306,16 @@ img {
   margin: 0;
   margin-bottom: 40px;
   margin-top: 34px;
+}
+
+.social__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .supergames__wrapper {

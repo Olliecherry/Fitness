@@ -4,6 +4,16 @@
 
 .media__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  // display: grid;
+  // grid-template-columns:1fr 1fr;
+  // grid-template-rows: 1fr 1fr 1fr;
+  // margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 120px;
 }
 
 .media__link {
@@ -15,3 +25,34 @@
   line-height: 19px;
   margin: 0;
 }
+
+.media__item {
+  margin-top: 30px;
+  max-height: 40px;
+  box-sizing: border-box;
+
+  // &:first-child {
+  //   margin-top: 30px;
+  // }
+}
+
+// .media__item--service {
+//   order: 1;
+//   margin-top: 40px;
+// }
+
+// .media__item--abonement {
+//   order: 3;
+// }
+
+// .media__item--promo {
+//   order: 2;
+// }
+
+// .media__item--train {
+//   order: 5;
+// }
+
+// .media__item--schedule {
+//   order: 4;
+// }
