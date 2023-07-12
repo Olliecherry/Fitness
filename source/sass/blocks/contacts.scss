@@ -1,0 +1,45 @@
+.contacts {
+  padding: 70px 15px;
+  display: grid;
+  grid-template-rows: min-content 1fr 1fr;
+  row-gap: 35px;
+}
+
+.contacts__name {
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.96px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contacts__item {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 0;
+}
+
+.contacts__description {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.contacts__details {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 35px;
+
+}
+
+.contacts__card {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+}
